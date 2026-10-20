@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.0.4"
+  version: "0.0.5"
 
 package:
   name: graphed-executors
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/graphed-executors/graphed_executors-${{ version }}.tar.gz
-  sha256: 8d758bfe94a2e96735ea6770c5065ee41efdb92aec9558d23cc1e4b277e68020
+  sha256: d64579858473b3222e1fe6a57e29267cc5bc4bf08d92f020afa8b9285186ff4c
 
 build:
   noarch: python
