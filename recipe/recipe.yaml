@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.0.5"
+  version: "0.0.6"
 
 package:
   name: graphed-executors
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/graphed-executors/graphed_executors-${{ version }}.tar.gz
-  sha256: d64579858473b3222e1fe6a57e29267cc5bc4bf08d92f020afa8b9285186ff4c
+  sha256: ffc0151695e2440d88e5a355f7b66c63af627b66a21e8666577926d5b7847ed2
 
 build:
   noarch: python
@@ -24,7 +24,8 @@ requirements:
     - hatchling
   run:
     - python >=${{ python_min }}
-    - graphed >=0.0.2
+    - graphed >=0.0.9
+    - cloudpickle
   # The dask and parsl backends are optional (pyproject extras `dask`/`parsl`); the local
   # thread/process executors need neither. Constrain rather than require so an environment that
   # installs them gets a version the backends were written against.
