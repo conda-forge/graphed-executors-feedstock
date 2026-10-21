@@ -24,7 +24,8 @@ requirements:
     - hatchling
   run:
     - python >=${{ python_min }}
-    - graphed >=0.0.2
+    - graphed >=0.0.9
+    - cloudpickle
   # The dask and parsl backends are optional (pyproject extras `dask`/`parsl`); the local
   # thread/process executors need neither. Constrain rather than require so an environment that
   # installs them gets a version the backends were written against.
