@@ -48,7 +48,7 @@ tests:
       run:
         - python ${{ python_min }}.*
     script:
-      - python -c "from graphed_executors.local.executors import ExecContext, LocalResources; print(ExecContext, LocalResources)"
+      - python -c "from graphed_executors.local import ThreadExecutor, ProcessPoolExecutor, LocalResources; print(ThreadExecutor, ProcessPoolExecutor, LocalResources)"
 
 about:
   summary: Run a graphed plan on threads, processes, a dask cluster, or a parsl pool
